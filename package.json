@@ -1,0 +1,24 @@
+{
+  "name": "upload-images",
+  "author": "randymxd06",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install-all": "pnpm install && pnpm install:nest && pnpm install:vue && copy:envs",
+    "install:nest": "cd nest-app && pnpm install",
+    "install:vue": "cd vue-app && pnpm install",
+    "copy:envs": "pnpm copy:nest-env && copy:vue-env",
+    "copy:nest-env": "node -e \"require('fs-extra').copySync('nest-app/.env.template', 'nest-app/.env')\"",
+    "copy:vue-env": "node -e \"require('fs-extra').copySync('vue-app/.env.template', 'vue-app/.env')\"",
+    "dev": "npm-run-all --parallel dev:nest dev:vue",
+    "dev:nest": "cd nest-app && pnpm start:dev",
+    "dev:vue": "cd vue-app && pnpm dev"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
