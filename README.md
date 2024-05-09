@@ -1,5 +1,7 @@
 # Upload Image App
 
+This project serves as an illustrative example of uploading images using Vue.js and Nest.js.
+
 ## Getting Started
 
 ### 1 - Clone the repository
