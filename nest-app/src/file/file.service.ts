@@ -30,7 +30,7 @@ export class FileService {
 
         // BUILD AND RETURN THE ACCESS URL //
         const baseUrl = 'http://localhost:3000'; // CHANGE THIS TO THE URL BASE OF YOUR APPLICATION //
-        const fileUrl = `${baseUrl}/assets/images/${fileName}`;
+        const fileUrl = `${baseUrl}/file/${fileName}`;
 
         return {
             url: fileUrl,
