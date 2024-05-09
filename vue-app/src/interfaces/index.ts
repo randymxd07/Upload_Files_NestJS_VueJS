@@ -1,0 +1,1 @@
+export * from './upload_image_response.interface';
