@@ -28,3 +28,8 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.btn-large {
+    font-size: 20px;
+    padding: 15px 30px;
+}

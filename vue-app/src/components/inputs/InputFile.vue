@@ -6,7 +6,12 @@ const { src, uploadImage } = useFile();
 <template>
 
     <div v-if="src" class="image-container">
-        <img :src="src" alt="Uploaded Image" class="uploaded-image">
+        <section style="margin-bottom: 10px;">
+            <img :src="src" alt="Uploaded Image" class="uploaded-image">
+        </section>
+        <button @click="src = ''" type="button" class="btn-large">
+            Reset
+        </button>
     </div>
 
     <form v-else enctype="multipart/form-data" method="POST" style="margin-bottom: 10px;">
